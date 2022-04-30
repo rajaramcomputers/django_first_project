@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Leave Details</title>
+</head>
+<body>
+<h2 align="center">Staff Leave Details</h2>
+    <table border="1" align="center">
+        <th>Staff ID</th>
+        <th>Staff Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>No of Days</th>
+        <th>Leave Balance</th>
+
+        {% for staffl in staffleave %}
+
+        <tr>
+            <td>{{staffl.staffid}}</td>
+            <td>{{staffl.staffid.staffname}}</td>
+            <td>{{staffl.startdate}}</td>
+            <td>{{staffl.enddate}}</td>
+            <td>{{staffl.noofdays}}</td>
+            <td>{{staffl.leavebalance}}</td>
+
+
+
+
+
+        </tr>
+
+        {% endfor %}
+    </table>
+</p>
+</body>
+</html>
